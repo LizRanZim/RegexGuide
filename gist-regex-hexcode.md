@@ -51,7 +51,7 @@ Our example just hast one grouping construct between the opening parenthesis ( a
 
 ### Bracket Expressions
 
-We glossed over our bracket expressions above when talking about quantifiers, but basically the bracket expression just refers to anythign inside the brackets. It is the pattern for the set of characters that we are trying to match to, which in this example is [a-f0-9]. In this case it is any lower case string from a-f or any number between 0-9.
+We glossed over our bracket expressions above when talking about quantifiers, but basically the bracket expression just refers to anything inside the brackets. It is the pattern for the set of characters that we are trying to match to, which in this example is [a-f0-9]. In this case it is any lower case string from a-f or any number between 0-9.
 
 We use it twice in this expression because of how they interact with the quantifiers, meaning that our first bracket expression [a-f0-9]{6} has to have string length of 6, and the second bracket expression [a-f0-9]{3} has to have a string length of 3. The pattern doesn't mean that the string we are trying to match to meets all of the requirements, it can meet any of the requirements.
 
