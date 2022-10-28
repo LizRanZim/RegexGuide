@@ -67,7 +67,7 @@ We haven't talked yet about this | pipe character in our expression in between t
 
 ### Flags
 
-Flags can occur after the last / slash in a Regex but we don't have any in our example, but I just want to mention them in case you run into them. There are 6 optional flags that can be used as of this writing. The most common are g (global search), i(case-insensitive), m (multi-line search).
+Flags can occur after the last / slash in a Regex but we don't have any in our example, but I just want to mention them in case you run into them. There are 6 optional flags that can be used as of this writing. The most common are g (global search), i (case-insensitive), m (multi-line search).
 
 ### Character Escapes
 
