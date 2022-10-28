@@ -53,12 +53,12 @@ Our example just hast one grouping construct between the opening parenthesis ( a
 
 We glossed over our bracket expressions above when talking about quantifiers, but basically the bracket expression just refers to anything inside the brackets. It is the pattern for the set of characters that we are trying to match to, which in this example is [a-f0-9]. In this case it is any lower case string from a-f or any number between 0-9.
 
-We use it twice in this expression because of how they interact with the quantifiers, meaning that our first bracket expression [a-f0-9]{6} has to have string length of 6, and the second bracket expression [a-f0-9]{3} has to have a string length of 3. The pattern doesn't mean that the string we are trying to match to meets all of the requirements, it can meet any of the requirements.
+We use it twice in this expression because of how they interact with the quantifiers, meaning that our first use of the bracket expression [a-f0-9]{6} has to have string length of 6, and the second use of the bracket expression [a-f0-9]{3} has to have a string length of 3. The pattern doesn't mean that the string we are trying to match to meets all of the requirements, it can meet any of the requirements.
 
 
 ### Character Classes
 
-Character classes define a group of characters. This group of characters can be in a string to make the string match our Regex. Bracket expressions are character classes. 
+Character classes define a group of characters. This group of characters can be in a string to make the string match our Regex. Bracket expressions are character classes. Here is an example of a bracket expression, which is a character class: [a-f0-9]
 
 ### The OR Operator
 
@@ -67,12 +67,12 @@ We haven't talked yet about this | pipe character in our expression in between t
 
 ### Flags
 
-Flags can occur after the last / slash in a Regex but we don't have any in our example. There are 6 optional flags that can be used as of this writing. The most common are g (global search), i(case-insensitive), m (multi-line search).
+Flags can occur after the last / slash in a Regex but we don't have any in our example, but I just want to mention them in case you run into them. There are 6 optional flags that can be used as of this writing. The most common are g (global search), i(case-insensitive), m (multi-line search).
 
 ### Character Escapes
 
-Character Escapes are used when one of the characters that makes up a Regex is also one of the characters that you need to use in your regex. So if you had a regex where you needed to match to something that contained a { bracket, you could use a backslash \ before the open curly { , like this \{ .
-This tells the regex that you are not starting a bracket expression but are instead wanting to use the { as a part of your match rules within your bracket expression.
+Character Escapes are used when one of the characters that makes up a Regex is also one of the characters that you need to use in your Regex. So if you had a Regex where you needed to match to something that contained a { bracket, you could use a backslash \ before the open curly { , like this \{ .
+This tells the Regex that you are not starting a bracket expression but are instead wanting to use the { as a part of your match rules within your bracket expression.
 
 
 ## Author
