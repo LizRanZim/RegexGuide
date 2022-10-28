@@ -72,7 +72,7 @@ Flags can occur after the last / slash in a Regex but we don't have any in our e
 ### Character Escapes
 
 Character Escapes are used when one of the characters that makes up a Regex is also one of the characters that you need to use in your Regex. So if you had a Regex where you needed to match to something that contained a { bracket, you could use a backslash \ before the open curly { , like this \{ .
-This tells the Regex that you are not starting a bracket expression but are instead wanting to use the { as a part of your match rules within your bracket expression.
+This tells the Regex that you are not starting a bracket expression but are instead wanting to use the { as a part of your match rules within your bracket expression. We don't have any in this example, but you may run across it so I've included it here.
 
 
 ## Author
